@@ -12,6 +12,23 @@ export interface ParsedBook {
   words: ParsedWord[];
 }
 
+/**
+ * 词书内容指纹：对词列表（词|音标|释义|例句|分类，排序稳定）做 FNV-1a 32 位哈希。
+ * 用于内置词书增量同步——哈希变说明词书内容变了，需补新词。同步、无依赖、确定性。
+ */
+export function hashBookWords(words: ParsedWord[]): string {
+  const norm = words
+    .map((w) => `${w.word.trim().toLowerCase()}|${w.phonetic}|${w.definition}|${w.example}|${w.category}`)
+    .sort()
+    .join('\n');
+  let h = 0x811c9dc5; // FNV offset basis
+  for (let i = 0; i < norm.length; i++) {
+    h ^= norm.charCodeAt(i);
+    h = Math.imul(h, 0x01000193); // FNV prime
+  }
+  return (h >>> 0).toString(16).padStart(8, '0');
+}
+
 interface MdMap {
   word: number;
   phonetic: number;

@@ -19,6 +19,10 @@ export class WordDB extends Dexie {
       collections: '++id, name',
       settings: 'key',
     });
+    // v2：books 增加 contentHash（内置词书内容指纹，支持增量同步）
+    this.version(2).stores({
+      books: '++id, name, contentHash',
+    });
   }
 }
 

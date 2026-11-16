@@ -3,6 +3,8 @@ export interface Book {
   name: string;
   source: 'built-in' | 'file';
   created: number;
+  /** 内置词书的内容指纹（词列表稳定哈希）；用于检测词书更新并增量同步。file 导入为空。 */
+  contentHash?: string;
 }
 
 export interface Word {

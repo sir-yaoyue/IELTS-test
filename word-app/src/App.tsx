@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSettingsSync, seedSettings } from './db';
 import type { Settings } from './types';
+import { seedBuiltInBooks } from './lib/seed';
 import { initTts } from './lib/tts';
 import type { SessionItem } from './lib/session';
 import type { Word } from './types';
@@ -34,8 +35,16 @@ export default function App() {
   const [quiz, setQuiz] = useState<Word[] | null>(null);
   const bookCount = useLiveQuery(() => db.books.count(), []);
 
+  const seededRef = useRef(false);
   useEffect(() => {
     seedSettings();
+    // 每次加载自动增量同步内置词书（幂等：无更新则全跳过，有更新则补新词、保留记忆）
+    if (!seededRef.current) {
+      seededRef.current = true;
+      seedBuiltInBooks().catch(() => {
+        // 同步失败不阻塞，SetupPage 仍可手动导入
+      });
+    }
   }, []);
 
   if (bookCount === undefined) {
