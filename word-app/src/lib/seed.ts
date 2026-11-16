@@ -6,10 +6,10 @@ import vol3Raw from '../../data/vol3.md?raw';
 import vol4Raw from '../../data/vol4.md?raw';
 
 const SEEDS = [
-  { name: '核心200词', raw: vol1Raw },
-  { name: '册2', raw: vol2Raw },
-  { name: '册3', raw: vol3Raw },
-  { name: '册4', raw: vol4Raw },
+  { name: '基础话题 230', raw: vol1Raw },
+  { name: '高频核心 338', raw: vol2Raw },
+  { name: '学术领域 348', raw: vol3Raw },
+  { name: '拓展应用 322', raw: vol4Raw },
 ];
 
 export interface SeedResult {
