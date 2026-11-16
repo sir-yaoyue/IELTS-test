@@ -137,6 +137,12 @@ export default function TodayPage({ onStart, onQuiz }: { onStart: (items: Sessio
       >
         {busy ? '准备中…' : primaryCount > 0 ? `开始今日学习（${primaryCount} 个）` : '今天没有可学内容 🎉'}
       </button>
+      {primaryCount > 0 && !busy && (
+        <p className="text-center text-xs text-slate-400 -mt-3 tabular-nums">
+          待复习 {dueItems.length} · 错词本 {lapsedItems.length} · 新词 {Math.min(unlearned.length, remainingQuota)}
+          {unlearned.length > remainingQuota && `（范围内共 ${unlearned.length} 未学，受每日配额限制）`}
+        </p>
+      )}
 
       <div className="grid grid-cols-3 gap-3">
         <QuickBtn label="只复习" count={dueItems.length} disabled={busy} onClick={() => start({ reviews: true, news: false, lapsed: false })} />
@@ -144,6 +150,7 @@ export default function TodayPage({ onStart, onQuiz }: { onStart: (items: Sessio
         <QuickBtn
           label="只学新词"
           count={Math.min(unlearned.length, remainingQuota)}
+          sub={unlearned.length > remainingQuota ? `/${unlearned.length} 未学` : ''}
           disabled={busy}
           onClick={() => start({ reviews: false, news: true, lapsed: false })}
         />
@@ -176,7 +183,7 @@ function Stat({ label, value, sub, tone }: { label: string; value: number; sub: 
   );
 }
 
-function QuickBtn({ label, count, disabled, onClick }: { label: string; count: number; disabled: boolean; onClick: () => void }) {
+function QuickBtn({ label, count, sub, disabled, onClick }: { label: string; count: number; sub?: string; disabled: boolean; onClick: () => void }) {
   return (
     <button
       disabled={disabled || count === 0}
@@ -184,6 +191,7 @@ function QuickBtn({ label, count, disabled, onClick }: { label: string; count: n
       className="py-3 rounded-2xl border border-slate-200 bg-white text-sm text-slate-600 disabled:opacity-40 hover:border-slate-300 transition-colors tabular-nums"
     >
       {label} {count}
+      {sub && <span className="text-xs text-slate-400">{sub}</span>}
     </button>
   );
 }
