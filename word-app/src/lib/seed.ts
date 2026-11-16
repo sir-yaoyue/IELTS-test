@@ -36,10 +36,31 @@ const RENAME_MAP: Record<string, string> = {
 };
 
 export async function seedBuiltInBooks(): Promise<SeedResult[]> {
-  // 迁移：旧名称词库重命名为新名称（保留所有记忆数据）
+  // 迁移：旧名称词库合并到新名称词库（保留所有记忆数据）
   for (const [oldName, newName] of Object.entries(RENAME_MAP)) {
     const oldBook = await db.books.where('name').equals(oldName).first();
-    if (oldBook) {
+    if (!oldBook) continue;
+
+    const newBook = await db.books.where('name').equals(newName).first();
+    if (newBook) {
+      // 新名称已存在 → 把旧词库的单词合并到新词库，删除旧词库
+      const oldWords = await db.words.where('bookId').equals(oldBook.id!).toArray();
+      const newWords = await db.words.where('bookId').equals(newBook.id!).toArray();
+      const newKeys = new Set(newWords.map((w) => w.word.trim().toLowerCase()));
+      let moved = 0;
+      for (const w of oldWords) {
+        const key = w.word.trim().toLowerCase();
+        if (key && !newKeys.has(key)) {
+          await db.words.add({ bookId: newBook.id!, word: w.word, phonetic: w.phonetic, definition: w.definition, example: w.example, category: w.category, isPhrase: w.isPhrase });
+          newKeys.add(key);
+          moved += 1;
+        }
+      }
+      await db.words.where('bookId').equals(oldBook.id!).delete();
+      await db.books.delete(oldBook.id!);
+      void moved;
+    } else {
+      // 新名称不存在 → 直接重命名
       await db.books.update(oldBook.id!, { name: newName });
     }
   }
