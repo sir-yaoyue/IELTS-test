@@ -27,7 +27,23 @@ export interface SeedResult {
  * - 已存在但 contentHash 不同 → 增量同步：补入新词、更新变了的词，**保留所有已有词的记忆数据**（cardState/reviewLog 不动）
  * 这样老用户刷新页面即可拿到新词（如新增册、补全词表），进度不丢。
  */
+/** 旧名称 → 新名称 映射（2026-11-16 命名优化） */
+const RENAME_MAP: Record<string, string> = {
+  '核心200词': '基础话题 230',
+  '册2': '高频核心 338',
+  '册3': '学术领域 348',
+  '册4': '拓展应用 322',
+};
+
 export async function seedBuiltInBooks(): Promise<SeedResult[]> {
+  // 迁移：旧名称词库重命名为新名称（保留所有记忆数据）
+  for (const [oldName, newName] of Object.entries(RENAME_MAP)) {
+    const oldBook = await db.books.where('name').equals(oldName).first();
+    if (oldBook) {
+      await db.books.update(oldBook.id!, { name: newName });
+    }
+  }
+
   const out: SeedResult[] = [];
   for (const s of SEEDS) {
     const parsed = parseMdBook(s.raw, s.name);
