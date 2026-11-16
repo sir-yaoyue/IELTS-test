@@ -16,6 +16,9 @@ export default function TodayPage({ onStart, onQuiz }: { onStart: (items: Sessio
   const states = useLiveQuery(() => db.cardState.toArray(), []);
   const log = useLiveQuery(() => db.reviewLog.toArray(), []);
   const settings = useSettings();
+  // 本次会话的新词数量（用户可自选，默认取全局配额）
+  const [sessionNew, setSessionNew] = useState<number | null>(null);
+  const sessionQuota = sessionNew ?? settings.dailyNew;
 
   if (!books || !words || !states || !log) {
     return <div className="text-slate-400 py-10 text-center">加载中…</div>;
@@ -63,7 +66,7 @@ export default function TodayPage({ onStart, onQuiz }: { onStart: (items: Sessio
   const start = async (opts: SessionOpts) => {
     setBusy(true);
     try {
-      const items = await buildSession(scope, opts, settings.dailyNew);
+      const items = await buildSession(scope, opts, sessionQuota);
       if (items.length === 0) {
         window.alert('当前范围没有可学内容');
         return;
@@ -74,7 +77,8 @@ export default function TodayPage({ onStart, onQuiz }: { onStart: (items: Sessio
     }
   };
 
-  const primaryCount = dueItems.length + lapsedItems.length + Math.min(unlearned.length, remainingQuota);
+  const sessionNewCount = Math.min(unlearned.length, sessionQuota);
+  const primaryCount = dueItems.length + lapsedItems.length + sessionNewCount;
 
   return (
     <div className="space-y-6">
@@ -125,6 +129,29 @@ export default function TodayPage({ onStart, onQuiz }: { onStart: (items: Sessio
             ))}
           </select>
         </div>
+        <div className="flex flex-wrap items-center gap-2 pt-1">
+          <span className="text-xs text-slate-500 shrink-0">本次新词</span>
+          {[10, 20, 30, 50].map((n) => (
+            <button
+              key={n}
+              onClick={() => setSessionNew(n)}
+              className={`px-2.5 py-1 rounded-lg text-xs tabular-nums transition-colors ${
+                sessionQuota === n ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              {n}
+            </button>
+          ))}
+          <input
+            type="number"
+            min={1}
+            max={200}
+            value={sessionQuota}
+            onChange={(e) => setSessionNew(Math.max(1, Number(e.target.value) || 1))}
+            className="w-16 border border-slate-200 rounded-lg px-2 py-1 text-xs tabular-nums bg-white"
+            aria-label="自定义新词数量"
+          />
+        </div>
         <div className="text-xs text-slate-400 tabular-nums">
           范围内：未学 {unlearned.length} · 已掌握 {masteredCount}
         </div>
@@ -139,8 +166,8 @@ export default function TodayPage({ onStart, onQuiz }: { onStart: (items: Sessio
       </button>
       {primaryCount > 0 && !busy && (
         <p className="text-center text-xs text-slate-400 -mt-3 tabular-nums">
-          待复习 {dueItems.length} · 错词本 {lapsedItems.length} · 新词 {Math.min(unlearned.length, remainingQuota)}
-          {unlearned.length > remainingQuota && `（范围内共 ${unlearned.length} 未学，受每日配额限制）`}
+          待复习 {dueItems.length} · 错词本 {lapsedItems.length} · 新词 {sessionNewCount}
+          {unlearned.length > sessionQuota && `（范围内共 ${unlearned.length} 未学）`}
         </p>
       )}
 
@@ -149,8 +176,8 @@ export default function TodayPage({ onStart, onQuiz }: { onStart: (items: Sessio
         <QuickBtn label="错词本" count={lapsedItems.length} disabled={busy} onClick={() => start({ reviews: false, news: false, lapsed: true })} />
         <QuickBtn
           label="只学新词"
-          count={Math.min(unlearned.length, remainingQuota)}
-          sub={unlearned.length > remainingQuota ? `/${unlearned.length} 未学` : ''}
+          count={sessionNewCount}
+          subBelow={unlearned.length > sessionQuota ? `范围内 ${unlearned.length} 未学` : unlearned.length > 0 ? `范围内 ${unlearned.length} 未学` : ''}
           disabled={busy}
           onClick={() => start({ reviews: false, news: true, lapsed: false })}
         />
@@ -183,15 +210,18 @@ function Stat({ label, value, sub, tone }: { label: string; value: number; sub: 
   );
 }
 
-function QuickBtn({ label, count, sub, disabled, onClick }: { label: string; count: number; sub?: string; disabled: boolean; onClick: () => void }) {
+function QuickBtn({ label, count, sub, subBelow, disabled, onClick }: { label: string; count: number; sub?: string; subBelow?: string; disabled: boolean; onClick: () => void }) {
   return (
     <button
       disabled={disabled || count === 0}
       onClick={onClick}
-      className="py-3 rounded-2xl border border-slate-200 bg-white text-sm text-slate-600 disabled:opacity-40 hover:border-slate-300 transition-colors tabular-nums"
+      className="py-2.5 rounded-2xl border border-slate-200 bg-white text-sm text-slate-600 disabled:opacity-40 hover:border-slate-300 transition-colors tabular-nums leading-tight"
     >
-      {label} {count}
-      {sub && <span className="text-xs text-slate-400">{sub}</span>}
+      <span className="block">
+        {label} {count}
+        {sub && <span className="text-xs text-slate-400"> {sub}</span>}
+      </span>
+      {subBelow && <span className="block text-xs text-slate-400 mt-0.5">{subBelow}</span>}
     </button>
   );
 }
