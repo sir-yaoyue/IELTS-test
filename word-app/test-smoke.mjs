@@ -75,11 +75,19 @@ try {
   if (cdp.log.length) console.log('   [console]', cdp.log.slice(0, 10).join(' | ').slice(0, 400));
   if (cdp.errors.length) console.log('   [pageerror]', cdp.errors.slice(0, 4).join(' || ').slice(0, 500));
 
+  // 方案C：新 profile 加载时 App 自动 seed 4 册 → 直接进今日页；
+  // 若自动 seed 失败仍显示 SetupPage → 手动点导入
   const body1 = await cdp.eval(`document.body ? document.body.innerText : 'NOBODY'`);
-  ok('首次启动显示「首次设置」', String(body1).includes('首次设置'), JSON.stringify(String(body1)).slice(0, 60));
+  const autoSeeded = String(body1).includes('今日');
+  if (!autoSeeded) {
+    const hasSetup = String(body1).includes('首次设置');
+    if (hasSetup) {
+      await cdp.eval(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('导入内置词库')); if (b) b.click(); })()`);
+    }
+  }
+  ok('加载后进入今日页（自动 seed 或手动导入）', autoSeeded || String(body1).includes('首次设置'), autoSeeded ? '自动 seed' : JSON.stringify(String(body1)).slice(0, 40));
 
-  await cdp.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.includes('导入内置词库')).click()`);
-  // 导入是异步写库，React live-query 触发 App 从 SetupPage 切回今日页，轮询等待
+  // 等今日页稳定
   let body2 = '';
   for (let i = 0; i < 20; i++) { await sleep(500); body2 = await cdp.eval(`document.body ? document.body.innerText : ''`); if (String(body2).includes('今日')) break; }
   if (!String(body2).includes('今日')) {

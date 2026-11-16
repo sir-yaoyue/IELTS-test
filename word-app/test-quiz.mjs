@@ -69,11 +69,11 @@ try {
   await cdp.send('Page.navigate', { url: BASE });
   await sleep(3000);
 
-  // 1. 导入
-  await cdp.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.includes('导入内置词库')).click()`);
+  // 1. 进入今日（方案C 自动 seed；若仍在 SetupPage 则手动导入）
+  await cdp.eval(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('导入内置词库')); if (b) b.click(); })()`);
   let body = '';
   for (let i = 0; i < 20; i++) { await sleep(500); body = await cdp.eval(`document.body.innerText`); if (String(body).includes('今日')) break; }
-  ok('导入后进入今日', String(body).includes('今日'));
+  ok('进入今日页', String(body).includes('今日'));
 
   // 2. 开始今日学习（30 新词），连答 30 个"记得"
   let startBtn = null;

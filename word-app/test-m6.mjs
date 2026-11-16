@@ -74,11 +74,11 @@ try {
   // 自动接受 confirm（headless 下 window.confirm 默认可能阻塞/返回 false）
   await cdp.eval(`window.confirm = () => true; window.alert = () => {}; 'ok'`);
 
-  // 1. 导入
-  await cdp.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.includes('导入内置词库')).click()`);
+  // 1. 进入今日（方案C 自动 seed；若仍在 SetupPage 则手动导入）
+  await cdp.eval(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('导入内置词库')); if (b) b.click(); })()`);
   let body = '';
   for (let i = 0; i < 20; i++) { await sleep(500); body = await cdp.eval(`document.body.innerText`); if (String(body).includes('今日')) break; }
-  ok('导入后进入今日', String(body).includes('今日'));
+  ok('进入今日页', String(body).includes('今日'));
 
   // 2. 学 5 个词（给记忆图制造数据）
   await cdp.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.includes('开始今日学习')).click()`);
@@ -95,10 +95,13 @@ try {
   await cdp.eval(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('退出')); if (b) b.click(); return !!b; })()`);
   await sleep(1200);
   await cdp.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.trim() === '统计').click()`);
-  await sleep(1500);
+  await sleep(1200);
+  // 统计页现为 3 Tab，记忆效果图在「记忆」Tab，先切过去
+  await cdp.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.trim() === '记忆').click()`);
+  await sleep(1000);
   let statsBody = '';
   for (let i = 0; i < 8; i++) { statsBody = await cdp.eval(`document.body.innerText`); if (String(statsBody).includes('记忆效果')) break; await sleep(400); }
-  ok('统计页出现「记忆效果」区', String(statsBody).includes('记忆效果'), JSON.stringify(String(statsBody)).slice(0, 60));
+  ok('统计页「记忆」Tab 出现「记忆效果」区', String(statsBody).includes('记忆效果'), JSON.stringify(String(statsBody)).slice(0, 60));
   ok('统计页出现「遗忘曲线」(D)', String(statsBody).includes('遗忘曲线'));
   ok('统计页出现「掌握阶段分布」(B)', String(statsBody).includes('掌握阶段分布'));
   // 验证 SVG 真的渲染了（不是空容器）
@@ -112,9 +115,9 @@ try {
   // 4. 词库页：展开词书→点词→看复习轨迹（C）
   await cdp.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.trim() === '词库设置').click()`);
   await sleep(1200);
-  await cdp.eval(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('核心200词')); if (b) b.click(); return !!b; })()`);
+  await cdp.eval(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('基础话题')); if (b) b.click(); return !!b; })()`);
   await sleep(800);
-  const expandedWords = await cdp.eval(`[...document.querySelectorAll('button')].filter(b => b.className.includes('rounded-lg') && b.textContent.trim().length > 1 && !b.textContent.includes('核心200词') && !b.textContent.includes('删除') && !b.textContent.includes('统计')).length`);
+  const expandedWords = await cdp.eval(`[...document.querySelectorAll('button')].filter(b => b.className.includes('rounded-lg') && b.textContent.trim().length > 1 && !b.textContent.includes('基础话题') && !b.textContent.includes('删除') && !b.textContent.includes('统计')).length`);
   ok('词书展开显示词列表', (expandedWords ?? 0) > 10, `words=${expandedWords}`);
   // 点一个词
   await cdp.eval(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.trim() === 'curriculum' || x.className.includes('rounded-lg') && x.title); if (b) b.click(); return b ? b.textContent.trim() : null; })()`);
