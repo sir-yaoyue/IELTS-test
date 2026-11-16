@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "雅思6.5备考规划.md",
+                "file": "雅思词汇手册-册2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "雅思6.5备考规划"
+              "title": "雅思词汇手册-册2"
             }
           }
         ]
@@ -189,5 +189,18 @@
     }
   },
   "active": "f5a8439f540fb983",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "雅思词汇手册-册3.md",
+    "word-app/vite.config.ts.timestamp-1794809744355-5c5976c6c1c2c8.mjs",
+    "word-app/dist/workbox-9c191d2f.js",
+    "word-app/dist/sw.js",
+    "word-app/dist/assets/index-D7nvoLA7.js",
+    "word-app/vite.config.ts.timestamp-1794809736876-5aa7c8369e42e.mjs",
+    "merge_channel.py",
+    "雅思6.5备考计划表-含渠道.xlsx",
+    "雅思词汇手册-册2.md",
+    "背单词软件方案.md",
+    "雅思词汇手册-核心200词.md",
+    "雅思6.5备考规划.md"
+  ]
 }
