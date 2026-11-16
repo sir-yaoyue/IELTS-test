@@ -2,10 +2,14 @@ import { db } from '../db';
 import { parseMdBook } from './importers';
 import vol1Raw from '../../data/vol1.md?raw';
 import vol2Raw from '../../data/vol2.md?raw';
+import vol3Raw from '../../data/vol3.md?raw';
+import vol4Raw from '../../data/vol4.md?raw';
 
 const SEEDS = [
   { name: '核心200词', raw: vol1Raw },
   { name: '册2', raw: vol2Raw },
+  { name: '册3', raw: vol3Raw },
+  { name: '册4', raw: vol4Raw },
 ];
 
 export interface SeedResult {

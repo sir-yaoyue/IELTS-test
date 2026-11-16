@@ -1,8 +1,8 @@
-# 雅思词汇手册 · 册2（435 词 + 30 短语）
+# 雅思词汇手册 · 册2（307 词 + 31 短语）
 
 > 配套《核心200词》使用 ｜ 制定日期：2026-11-16
 > 定位：册1 过完（D9 起）的接续词源，词汇书到货前的储备。已按册1 全量去重。
-> 分组：① 社会议论与观点 50 ｜ ② 图表写作数据词 45 ｜ ③ 口语 Part 2 话题词 60 ｜ ④ 高级同义替换 80 ｜ ⑤ 学术与议论短语 30 ｜ ⑥ 听力场景词 45
+> 分组：① 社会议论与观点 50 ｜ ② 图表写作数据词 46 ｜ ③ 口语 Part 2 话题词 61 ｜ ④ 高级同义替换 80 ｜ ⑤ 学术与议论短语 31 ｜ ⑥ 听力场景词 45 ｜ ⑦ 高频副词 25
 
 ## ① 社会议论与观点（50 词）
 
@@ -197,4 +197,232 @@
 | sleek      | /sliːk/       | 光滑流畅的   | The new car has a sleek design.                  |
 | compact    | /kəmˈpækt/    | 紧凑的，小巧的 | This camera is small and compact.                |
 
-<!-- NEXT -->
+## ④ 高级同义替换（80 词）
+
+> 6.5 的词汇多样性靠这组：写作里用升级词替换基础词，口语里每段自然夹一两个。中文格式＝「升级后的意思（原词：基础词）」，例句一律用升级词。
+
+| 单词 | 音标 | 中文 | 例句 |
+|---|---|---|---|
+| beneficial | /ˈbenɪʃl/ | 有益的（原词：good） | Regular exercise is beneficial to your health. |
+| pivotal | /ˈpɪvətl/ | 至关重要的（原词：important） | She played a pivotal role in the project. |
+| assist | /əˈsɪst/ | 帮助（原词：help） | Nurses assist doctors during operations. |
+| maintain | /meɪnˈteɪn/ | 保持（原词：keep） | It is hard to maintain this standard. |
+| illustrate | /ˈɪləstreɪt/ | 说明，阐释（原词：show） | The example illustrates the problem clearly. |
+| numerous | /ˈnjʊərəs/ | 许多的（原词：many） | Numerous studies support this finding. |
+| dilemma | /dɪˈleəmə/ | 困境，难题（原词：problem） | We face a real dilemma here. |
+| purchase | /ˈpɜːtʃəs/ | 购买（原词：buy） | Consumers purchase goods online more often. |
+| inexpensive | /ˌɪnɪkˈspensɪv/ | 便宜的（原词：cheap） | This is an inexpensive yet effective solution. |
+| costly | /ˈkɒstli/ | 昂贵的（原词：expensive） | Mistakes can be extremely costly. |
+| enormous | /ɪˈnɔːməs/ | 巨大的（原词：big） | The factory produces an enormous amount of steel. |
+| refine | /rɪˈfaɪn/ | 改进，精炼（原词：improve） | Scientists refined the method over several years. |
+| safeguard | /ˈsæfgɑːd/ | 保护（原词：protect） | The law safeguards consumers' rights. |
+| impede | /ɪmˈpiːd/ | 阻碍（原词：stop） | Heavy traffic impeded the delivery. |
+| resolve | /rɪˈzɒlv/ | 解决（原词：solve） | We must resolve the dispute peacefully. |
+| determine | /dɪˈtɜːmɪn/ | 决定（原词：decide） | Evidence will determine the outcome. |
+| convince | /kənˈvɪns/ | 使确信（原词：make sb believe） | The argument convinced the whole class. |
+| endorse | /ɪndɔːs/ | 支持，背书（原词：support） | Several celebrities endorsed the campaign. |
+| object | /əbˈdʒekt/ | 反对（原词：oppose） | Nobody objected to the new plan. |
+| rival | /ˈraɪvl/ | 竞争（原词：compete） | The two companies are fierce rivals. |
+| collaborate | /kəˈlæbəreɪt/ | 协作（原词：work together） | The universities collaborate on research. |
+| interact | /ˌɪntərˈækt/ | 互动（原词：talk to each other） | Children interact through play. |
+| evolve | /ɪˈvɒlv/ | 逐步发展（原词：develop） | The festival evolved into a major event. |
+| expand | /ɪkˈspænd/ | 扩大（原词：get bigger） | The company plans to expand into Asia. |
+| manufacture | /ˌmænjuˈfæktʃə/ | 制造（原词：make） | The firm manufactures components for cars. |
+| utilize | /ˈjuːtəlaɪz/ | 利用（原词：use） | We utilize solar power for heating. |
+| squander | /ˈskwɒndə/ | 浪费（原词：waste） | Don't squander your youth. |
+| preserve | /prɪˈzɜːv/ | 保存（原词：keep safe） | The museum preserves ancient artefacts. |
+| accumulate | /əˈkjuːmjuleɪt/ | 逐渐积累（原词：collect） | Snow accumulated during the night. |
+| allocate | /ˈæləkeɪt/ | 分配（原词：give） | Funds were allocated to education. |
+| assess | /əˈses/ | 评估（原词：check） | Teachers assess students' progress regularly. |
+| gauge | /ɡeɪdʒ/ | 衡量（原词：measure） | It is hard to gauge the damage. |
+| forecast | /ˈfɔːkɑːst/ | 预测（原词：predict） | Economists forecast slower growth next year. |
+| presume | /prɪˈzjuːm/ | 假定（原词：think） | I presume you are new here. |
+| deduce | /dɪˈdjuːs/ | 推断（原词：guess） | We can deduce the answer from the clues. |
+| underscore | /ˈʌndəskɔː/ | 强调（原词：stress） | The report underscores the urgency. |
+| symbolize | /ˈsɪməlaɪz/ | 象征（原词：stand for） | The tower symbolizes modern progress. |
+| mirror | /ˈmɪrə/ | 反映（原词：show） | Prices mirror the state of the economy. |
+| signal | /ˈsɪɡnəl/ | 预示，表明（原词：show） | The results signal a change in demand. |
+| allude | /əˈluːd/ | 暗指（原词：mention） | The author alludes to his childhood. |
+| signify | /ˈsɪɡnɪfaɪ/ | 意味着（原词：mean） | The red light signifies danger. |
+| rely | /rɪˈlaɪ/ | 依赖（原词：depend on） | We rely on public transport daily. |
+| stem | /stem/ | 源于（原词：come from） | Most problems stem from poor communication. |
+| culminate | /ˈkʌlmɪneɪt/ | 达到高潮（原词：end with） | The talks culminated in a signed agreement. |
+| diminish | /dɪˈmɪnɪʃ/ | 减少，减弱（原词：get smaller） | The pain gradually diminished. |
+| accessible | /əkˈsesəbl/ | 易使用的（原词：easy to use） | The website is fully accessible to users. |
+| adequate | /ˈædɪkwət/ | 足够的（原词：enough） | The room has adequate natural light. |
+| distinctive | /dɪˈstɪŋktɪv/ | 独特的（原词：special） | The building has a distinctive style. |
+| prevailing | /prɪˈveɪlɪŋ/ | 主流的（原词：common） | The prevailing view is optimistic. |
+| precise | /prɪˈsaɪs/ | 精确的（原词：exact） | Please give me precise details. |
+| plausible | /ˈplɔːzəbl/ | 貌似合理的（原词：believable） | His explanation sounds quite plausible. |
+| feasible | /ˈfiːzəbl/ | 可行的（原词：possible） | The plan is technically feasible. |
+| likely | /ˈlaɪkli/ | 可能的（原词：maybe） | Rain is likely tomorrow. |
+| novel | /ˈnɒvl/ | 新颖的（原词：new） | The team adopted a novel approach. |
+| obsolete | /əˈbəʊslɪt/ | 过时的（原词：old） | Film cameras have become obsolete. |
+| overcrowded | /ˌəʊvəˈkraʊdɪd/ | 过度拥挤的（原词：very crowded） | The trains are overcrowded at rush hour. |
+| tranquil | /ˈtræŋkwɪl/ | 宁静的（原词：quiet） | The lake was tranquil at dawn. |
+| prosperous | /ˈprɒspərəs/ | 繁荣的（原词：rich） | It is a prosperous coastal region. |
+| impoverished | /ɪmˈpɒvɪʃt/ | 贫困的（原词：poor） | The programme helps impoverished families. |
+| robust | /rəʊˈbʌst/ | 强健的（原词：strong） | The economy shows robust growth. |
+| vulnerable | /ˈvʌlnərəbl/ | 脆弱的（原词：weak） | Elderly people are more vulnerable to fraud. |
+| competence | /ˈkɒmpɪtəns/ | 能力（原词：skill） | Employers value practical competence. |
+| concept | /ˈkɒnsept/ | 概念（原词：idea） | The concept is simple but powerful. |
+| transform | /trænsˈfɔːm/ | 彻底改变（原词：change） | The internet transformed the way we shop. |
+| prompt | /prɒmpt/ | 迅速的（原词：fast） | The staff gave a prompt response. |
+| sluggish | /ˈslʌɡɪʃ/ | 迟缓的（原词：slow） | Demand remained sluggish throughout the year. |
+| stunning | /ˈstʌnɪŋ/ | 极好的（原词：very good） | The view was absolutely stunning. |
+| indignant | /ɪnˈdɪɡnənt/ | 愤慨的（原词：angry） | She was indignant at the injustice. |
+| delighted | /dɪˈlaɪtɪd/ | 高兴的（原词：happy） | He was delighted with the result. |
+| distressed | /dɪˈstrest/ | 苦恼的（原词：very worried） | Many residents were distressed by the cuts. |
+| apprehensive | /ˌæprɪˈhensɪv/ | 忧虑的（原词：afraid） | Students are apprehensive about the exam. |
+| captivating | /ˈkæptɪveɪtɪŋ/ | 迷人的（原词：interesting） | She told a captivating story. |
+| tedious | /ˈtiːdiəs/ | 乏味的（原词：boring） | The process is tedious but necessary. |
+| challenging | /ˈtʃælɪndʒɪŋ/ | 有挑战性的（原词：difficult） | The job proved challenging at first. |
+| straightforward | /ˌstreɪtfɔːˈwɔːd/ | 直截了当的（原词：easy） | The procedure is simple and straightforward. |
+| rapid | /ˈræpɪd/ | 迅速的（原词：quick） | The city has seen rapid expansion. |
+| refreshing | /rɪˈfreʃɪŋ/ | 耳目一新的（原词：new and nice） | His ideas were surprisingly refreshing. |
+| alleviate | /əˈliːvieɪt/ | 缓解（原词：make less） | The medicine helped alleviate the pain. |
+| abolish | /əˈbɒlɪʃ/ | 废除（原词：get rid of） | The government plans to abolish the tax. |
+| compensate | /ˈkɒmpenseɪt/ | 补偿（原词：pay back） | Firms must compensate affected customers. |
+
+## ⑤ 学术与议论短语（31 条）
+
+> 与册1 的 30 条零重复。写作 Task 2 用论证类和占比类（12–18、29–31），口语 Part 3 用态度类（1–9），倒装类（19–21）是高分句型，背熟句型框架。
+
+| # | 短语 | 中文 | 例句 |
+|---|---|---|---|
+| 1 | a matter of concern | 令人担忧的事 | The rising cost of living is a matter of concern. |
+| 2 | at stake | 处于险境，关系重大 | Too much is at stake to ignore the warning. |
+| 3 | by implication | 隐含地 | He refused by implication to answer the question. |
+| 4 | first and foremost | 首先，最重要的是 | First and foremost, we need to protect the data. |
+| 5 | second and foremost | 其次 | Second and foremost, the cost must be controlled. |
+| 6 | last but not least | 最后但同样重要的是 | Last but not least, the team's spirit deserves praise. |
+| 7 | on balance | 权衡之后 | On balance, the benefits outweigh the drawbacks. |
+| 8 | all things considered | 综合考虑 | All things considered, it was a genuine success. |
+| 9 | undoubtedly | 无疑地 | English is undoubtedly the most useful language. |
+| 10 | it is widely believed that | 人们普遍认为 | It is widely believed that exercise improves memory. |
+| 11 | there is a consensus that | 人们达成共识 | There is a consensus that the rules should be fair. |
+| 12 | be attributed to | 归因于 | The success can be attributed to hard work. |
+| 13 | be associated with | 与…相关 | Smoking is strongly associated with lung disease. |
+| 14 | be correlated with | 与…存在相关性 | Screen time is correlated with sleep problems. |
+| 15 | give priority to | 优先考虑 | The city should give priority to public transport. |
+| 16 | take priority over | 优先于 | Safety must take priority over speed. |
+| 17 | make a difference | 产生影响，起作用 | Small changes can make a big difference. |
+| 18 | be of great significance | 意义重大 | This discovery is of great significance to medicine. |
+| 19 | in no case | 决不（倒装） | In no case should you share your password. |
+| 20 | by no means | 决不（倒装） | The task is by no means finished. |
+| 21 | under no circumstances | 在任何情况下都不（倒装） | Under no circumstances must the equipment be left alone. |
+| 22 | to a certain extent | 在某种程度上 | To a certain extent, I agree with the argument. |
+| 23 | to what extent | 在多大程度上 | We must ask to what extent this is true. |
+| 24 | it goes without saying | 不言而喻 | It goes without saying that health comes first. |
+| 25 | as far as sb is concerned | 就某人而言 | As far as I am concerned, the plan works. |
+| 26 | with the advancement of | 随着…的发展 | With the advancement of technology, prices have fallen. |
+| 27 | in the light of | 鉴于，考虑到 | In the light of the evidence, he was released. |
+| 28 | by virtue of | 凭借 | She succeeded by virtue of her determination. |
+| 29 | account for | 占（比例），解释 | Women account for most of the local workforce. |
+| 30 | make up | 组成；占 | Children under ten make up 40 percent of users. |
+| 31 | constitute | 构成 | These three items constitute the core of the plan. |
+
+## ⑥ 听力场景词（45 词）
+
+> Section 1–2 三大场景：预订/酒店、医疗预约、交通出行。听力填空题的答案大量来自这组词，拼写必须零错误（cancellation 双 l、accommodation 双 m 是高频陷阱）。
+
+### 预订与酒店（16 词）
+
+| 单词 | 音标 | 中文 | 例句 |
+|---|---|---|---|
+| reservation | /ˈrezərvəʃn/ | 预订 | I'd like to make a reservation for two people. |
+| itinerary | /aɪˈtɪnərəri/ | 行程单 | The itinerary includes three days in Paris. |
+| boarding | /ˈbɔːdɪŋ/ | 登机；上车 | Boarding starts at the north entrance. |
+| luggage | /ˈlʌɡɪdʒ/ | 行李 | I forgot to collect my luggage. |
+| baggage | /ˈbæɡɪdʒ/ | 行李（尤指托运） | Baggage claim is on the ground floor. |
+| traveler | /ˈtrævələ/ | 旅行者 | The traveler asked for a quiet room. |
+| dormitory | /dɔːˈmɪtəri/ | 宿舍 | The dormitory has shared bathrooms. |
+| suite | /swiːt/ | 套房 | We booked a suite with a small kitchen. |
+| reception | /rɪˈsepʃn/ | 接待处 | Please check in at the reception. |
+| laundry | /ˈlɔːndri/ | 洗衣服务 | The laundry service costs ten pounds. |
+| minibar | /ˈmɪnibɑː/ | 客房小冰箱 | The minibar is charged to your room. |
+| deposit | /dɪˈpɒzɪt/ | 押金 | We paid a refundable deposit for the flat. |
+| cancellation | /ˌkænsəˈleɪʃn/ | 取消 | Cancellation is free up to 48 hours before. |
+| refund | /ˈriːfʌnd/ | 退款 | The refund will arrive within a week. |
+| invoice | /ˈɔɪsvoɪs/ | 发票 | I need an invoice for the company accounts. |
+| receipt | /rɪˈsiːt/ | 收据 | Keep the receipt in case of a problem. |
+
+### 医疗与预约（13 词）
+
+| 单词 | 音标 | 中文 | 例句 |
+|---|---|---|---|
+| estimate | /ˈestɪmeɪt/ | 估价，预估 | The repair estimate is about 200 pounds. |
+| repair | /rɪˈpeə/ | 修理 | My phone needs a screen repair. |
+| maintenance | /ˈmeɪntənəns/ | 保养，维修 | The building has a maintenance problem. |
+| appointment | /əˈpɔɪntmənt/ | 预约 | I have a doctor's appointment at three. |
+| clinic | /ˈklɪnɪk/ | 诊所 | The clinic is open until eight. |
+| pharmacy | /ˈfɑːməsi/ | 药房 | The pharmacy is next to the station. |
+| consultation | /kənˌsʌlˈteɪʃn/ | 会诊，咨询 | The consultation lasts about twenty minutes. |
+| complaint | /kəmˈpleɪnt/ | 抱怨，投诉 | I'd like to make a formal complaint. |
+| therapist | /ˈθerəpɪst/ | 治疗师 | The therapist recommended more rest. |
+| nurse | /nɜːs/ | 护士 | The nurse checked my temperature. |
+| physician | /fɪˈzɪʃn/ | 医生（内科） | The physician prescribed some medicine. |
+| dentist | /ˈdentɪst/ | 牙医 | I need to see the dentist about a toothache. |
+| optician | /ˈɒptɪʃn/ | 配镜师 | The optician measured my eyesight this morning. |
+
+### 交通与费用（16 词）
+
+| 单词 | 音标 | 中文 | 例句 |
+|---|---|---|---|
+| gym | /dʒɪm/ | 健身房 | The hotel has a free gym downstairs. |
+| membership | /ˈmembəʃɪp/ | 会员资格 | A membership costs fifteen pounds a month. |
+| fee | /fiː/ | 费用 | There is a small booking fee. |
+| timetable | /ˈtaɪmteɪbl/ | 时刻表 | Check the timetable before you travel. |
+| departure | /dɪˈpɑːtʃə/ | 出发；航班 | The departure time has been changed. |
+| arrival | /əˈraɪvl/ | 到达 | Our arrival was delayed by an hour. |
+| transfer | /ˈtrænsfɜː/ | 中转；换乘 | We need a transfer at the airport. |
+| layover | /ˈleɪəʊvə/ | 中转停留 | Our layover in Dubai is six hours. |
+| customs | /ˈkʌstəmz/ | 海关 | We passed through customs without any problems. |
+| visa | /ˈviːzə/ | 签证 | You need a visa to enter the country. |
+| passport | /ˈpɑːspɔːt/ | 护照 | Your passport must be valid for six months. |
+| ferry | /ˈferi/ | 渡轮 | The ferry crosses the bay every hour. |
+| coach | /kəʊtʃ/ | 长途客车 | The coach leaves from the station at nine. |
+| ticket | /ˈtɪkɪt/ | 票 | I booked a return ticket online. |
+| fare | /feə/ | 票价，车费 | The fare is included in the package. |
+| accommodation | /əˌkɒməˈdeɪʃn/ | 住宿 | We found cheap accommodation near the beach. |
+
+## ⑦ 高频副词（25 词）
+
+> 修饰趋势与程度：Task 1 的速度/幅度副词 + Task 2 的论证副词。副词是词汇多样性最便宜的加分项，和②④组搭配使用（如：significantly reduce、a dramatic decline）。
+
+| 单词 | 音标 | 中文 | 例句 |
+|---|---|---|---|
+| dramatically | /drəˈmætɪkli/ | 大幅地 | Prices have fallen dramatically this year. |
+| gradually | /ˈɡrædʒuəli/ | 逐渐地 | The town has gradually become more multicultural. |
+| steadily | /ˈstedili/ | 稳步地 | Employment has been rising steadily. |
+| sharply | /ˈʃɑːpli/ | 急剧地 | Demand dropped sharply after the price increase. |
+| slightly | /ˈslaɪtli/ | 轻微地 | The results were slightly better than expected. |
+| consistently | /kənˈsɪstəntli/ | 一贯地 | She has performed consistently well. |
+| significantly | /sɪɡˈnɪfɪkantli/ | 显著地 | Costs have decreased significantly. |
+| substantially | /səbˈstænʃəli/ | 大幅度地 | The government has substantially increased funding. |
+| rapidly | /ˈræpɪdli/ | 迅速地 | Technology is advancing rapidly. |
+| smoothly | /ˈsmuːðli/ | 顺利地 | The transition went remarkably smoothly. |
+| effectively | /ɪˈfektɪvli/ | 有效地 | The policy worked effectively in most areas. |
+| efficiently | /ɪˈfɪʃntli/ | 高效率地 | The new system runs much more efficiently. |
+| successfully | /səkˈsesfəli/ | 成功地 | The project was completed successfully. |
+| ultimately | /ˈʌltɪmətli/ | 最终 | Ultimately, the decision rests with the government. |
+| eventually | /ɪˈventʃuəli/ | 终究 | Eventually, the two companies merged. |
+| initially | /ɪˈnɪʃəli/ | 最初 | Initially, the plan was unpopular. |
+| recently | /ˈriːsntli/ | 最近 | Recently, more people have started cycling to work. |
+| frequently | /ˈfriːkwəntli/ | 频繁地 | The area is frequently affected by storms. |
+| occasionally | /əˈkeɪʒnəli/ | 偶尔 | We occasionally meet for lunch after work. |
+| rarely | /ˈreəli/ | 很少 | Such serious accidents now occur very rarely. |
+| hardly | /ˈhɑːdli/ | 几乎不 | The results were hardly surprising. |
+| merely | /ˈmɪəli/ | 仅仅 | We merely want a fair investigation. |
+| simply | /ˈsɪmpli/ | 简单地 | The proposed solution is simply not workable. |
+| visibly | /ˈvɪzəbli/ | 看得见地 | The city has changed visibly over the decade. |
+| noticeably | /ˈnəʊtəsbli/ | 明显地 | Her accent became noticeably weaker. |
+
+## 使用规则
+
+> 1) 复习节奏沿用册1 的 **1-3-7-15**（第 1、3、7、15 天各复习一遍，错的进错词本）
+> 2) **② 图表组**必须「单词 + 例句」整句背，Task 1 直接套用（surge/plummet/plateau + 例句就是答题模板）
+> 3) **④ 同义替换组**每个词造一个自己的句子才算掌握，写作里每 150 词至少换 3 个基础词
+> 4) **⑤ 短语组**挑 10 条进口语素材库（Part 3 态度句），写作 Task 2 用剩下的 20 条
+> 5) **⑥ 听力组**重点练拼写：cancellation（双 l）、accommodation（双 m）、physician（c 不发音的陷阱）、itinerary（重音在 ti）
+
