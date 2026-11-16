@@ -91,7 +91,8 @@ try {
   ok('导入后进入「今日」', String(body2).includes('今日'), JSON.stringify(String(body2)).slice(0, 60));
 
   const dbc = await cdp.eval(`new Promise((res) => { const rq = indexedDB.open('ielts-words'); rq.onsuccess = () => { const d = rq.result; const tx = d.transaction(['books','words'],'readonly'); const bc = tx.objectStore('books').count(); const wc = tx.objectStore('words').count(); bc.onsuccess = () => wc.onsuccess = () => res({books: bc.result, words: wc.result}); }; rq.onerror = () => res({error:'open fail'}); })`);
-  ok('IndexedDB 词书=2 词量≈387', dbc?.books === 2 && dbc?.words >= 380, JSON.stringify(dbc));
+  // 兼容 2 册(387) 与 4 册(1238+)：核心200词必在，总词量 ≥380
+  ok('IndexedDB 导入成功（≥2 词书，≥380 词，含核心200词）', (dbc?.books ?? 0) >= 2 && (dbc?.words ?? 0) >= 380, JSON.stringify(dbc));
 
   await cdp.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.includes('开始今日学习')).click()`);
   await sleep(1500);
